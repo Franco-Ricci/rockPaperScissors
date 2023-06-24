@@ -1,5 +1,5 @@
 
-import Triangle from "../../public/bg-triangle.svg";
+import Triangle from "../../public/images/bg-triangle.svg";
 // eslint-disable-next-line react/prop-types
 export function ClassicMode({rock,paper,scissors,yourChoice}) {
   return (
