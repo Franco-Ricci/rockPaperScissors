@@ -411,7 +411,7 @@ body{
   background-color: white;
   padding:40px;
   border-radius: 50%;
-  border: solid 15px hsl(261, 73%, 60%);
+  border: solid 25px hsl(261, 73%, 60%);
   box-shadow: inset #0000008a 1px 5px 6px 2px;
 
 }
@@ -424,7 +424,7 @@ body{
   background-color: white;
   padding:40px;
   border-radius: 50%;
-  border: solid 15px hsl(189, 59%, 53%);
+  border: solid 25px hsl(189, 59%, 53%);
   box-shadow: inset #0000008a 1px 5px 6px 2px;
 
 }

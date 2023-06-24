@@ -1,14 +1,14 @@
 import "./index.css";
 // import svg from "./assets/react-svg"
-import Logo from "./images/logo.svg";
-import rock from "./images/icon-rock.svg";
-import paper from "./images/icon-paper.svg";
-import scissors from "./images/icon-scissors.svg";
-import lizard from "./images/icon-lizard.svg";
-import spock from "./images/icon-spock.svg";
+import Logo from "../public/images/logo.svg";
+import rock from "../public/images/icon-rock.svg";
+import paper from "../public/images/icon-paper.svg";
+import scissors from "../public/images/icon-scissors.svg";
+import lizard from "../public/images/icon-lizard.svg";
+import spock from "../public/images/icon-spock.svg";
 
-import imgRules from "./images/image-rules.svg";
-import rulesBonus from "./images/image-rules-bonus.svg";
+import imgRules from "../public/images/image-rules.svg";
+import rulesBonus from "../public/images/image-rules-bonus.svg";
 import { UseGameLogic } from "./logic/gameLogic";
 import { Header } from "./components/Header";
 import { ClassicMode } from "./components/ClassicMode";

@@ -1,4 +1,4 @@
-import Pentagon from "../images/bg-pentagon.svg";
+import Pentagon from "../../public/images/bg-pentagon.svg";
 
 // eslint-disable-next-line react/prop-types
 export function BonusMode({ rock, paper, scissors, lizard, spock, yourChoice }) {
