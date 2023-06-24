@@ -44,25 +44,25 @@ export function UseGameLogic({ rock, paper, scissors, lizard, spock }) {
 
     const checkMatch = () => {
       if (userChoice === pc) {
-        setPcImgChosen(`/public/icon-${pc}.svg`);
-        setUserImgChosen(`/public/icon-${userChoice}.svg`);
+        setPcImgChosen(`/images/icon-${pc}.svg`);
+        setUserImgChosen(`/images/icon-${userChoice}.svg`);
         colorsPicks(userChoice, pc);
         setResults("Draw");
         return "empate";
       } else if (userChoice == "rock" && (pc == "paper" || pc == "spock")) {
-        setUserImgChosen(rock), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(rock), setPcImgChosen(`/images/icon-${pc}.svg`);
         subtractScore();
         colorsPicks(userChoice, pc);
         setResults("you lose");
         return "pc wins";
       } else if (userChoice == "rock" && (pc == "scissors" || pc == "lizard")) {
-        setUserImgChosen(rock), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(rock), setPcImgChosen(`/images/icon-${pc}.svg`);
         addScore();
         colorsPicks(userChoice, pc);
         setResults("you win");
         return "user win";
       } else if (userChoice == "paper" && (pc == "rock" || pc == "spock")) {
-        setUserImgChosen(paper), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(paper), setPcImgChosen(`/images/icon-${pc}.svg`);
         addScore();
         colorsPicks(userChoice, pc);
         setResults("you win");
@@ -71,7 +71,7 @@ export function UseGameLogic({ rock, paper, scissors, lizard, spock }) {
         userChoice == "paper" &&
         (pc == "scissors" || pc == "lizard")
       ) {
-        setUserImgChosen(paper), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(paper), setPcImgChosen(`/images/icon-${pc}.svg`);
 
         subtractScore();
         colorsPicks(userChoice, pc);
@@ -81,13 +81,13 @@ export function UseGameLogic({ rock, paper, scissors, lizard, spock }) {
         userChoice == "scissors" &&
         (pc == "lizard" || pc == "paper")
       ) {
-        setUserImgChosen(scissors), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(scissors), setPcImgChosen(`/images/icon-${pc}.svg`);
         addScore();
         colorsPicks(userChoice, pc);
         setResults("you win");
         return "user win";
       } else if (userChoice == "scissors" && (pc == "rock" || pc == "spock")) {
-        setUserImgChosen(scissors), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(scissors), setPcImgChosen(`/images/icon-${pc}.svg`);
         subtractScore();
         colorsPicks(userChoice, pc);
         setResults("you lose");
@@ -95,25 +95,25 @@ export function UseGameLogic({ rock, paper, scissors, lizard, spock }) {
 
         /*bonus*/
       } else if (userChoice == "lizard" && (pc == "spock" || pc == "paper")) {
-        setUserImgChosen(lizard), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(lizard), setPcImgChosen(`/images/icon-${pc}.svg`);
         addScore();
         colorsPicks(userChoice, pc);
         setResults("you win");
         return "user win";
       } else if (userChoice == "lizard" && (pc == "rock" || pc == "scissors")) {
-        setUserImgChosen(lizard), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(lizard), setPcImgChosen(`/images/icon-${pc}.svg`);
         subtractScore();
         colorsPicks(userChoice, pc);
         setResults("you lose");
         return "pc win";
       } else if (userChoice == "spock" && (pc == "scissors" || pc == "rock")) {
-        setUserImgChosen(spock), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(spock), setPcImgChosen(`/images/icon-${pc}.svg`);
         addScore();
         colorsPicks(userChoice, pc);
         setResults("you win");
         return "user win";
       } else if (userChoice == "spock" && (pc == "paper" || pc == "lizard")) {
-        setUserImgChosen(spock), setPcImgChosen(`/public/icon-${pc}.svg`);
+        setUserImgChosen(spock), setPcImgChosen(`/images/icon-${pc}.svg`);
         subtractScore();
         colorsPicks(userChoice, pc);
         setResults("you lose");
