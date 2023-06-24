@@ -9,7 +9,7 @@ import spock from "./images/icon-spock.svg";
 
 import imgRules from "./images/image-rules.svg";
 import rulesBonus from "./images/image-rules-bonus.svg";
-import { UseGameLogic } from "./logic/GameLogic";
+import { UseGameLogic } from "./logic/gameLogic";
 import { Header } from "./components/Header";
 import { ClassicMode } from "./components/ClassicMode";
 import { BonusMode } from "./components/BonusMode";
