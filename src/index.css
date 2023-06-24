@@ -524,6 +524,10 @@ body{
     padding: 12px;
   }
 
+  .rules__container{
+    padding: 12px
+  }
+
   .pick__scissors{
     right: 15px;
   }
