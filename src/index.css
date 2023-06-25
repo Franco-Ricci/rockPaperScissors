@@ -439,6 +439,7 @@ body {
   height: 330%;
   left: -147px;
   content: "";
+  display: block;
   position: absolute;
   border-radius: 100%;
   background: radial-gradient(
@@ -450,9 +451,14 @@ body {
   );
   z-index: -1;
   opacity: 0.4;
+
   animation: fadeIn 0s cubic-bezier(0.175, 0.885, 0.32, 1.275) both,
-    loadingSmaller 1s 0s cubic-bezier(0.33, 1, 0.68, 1) infinite
-      alternate-reverse;
+  loadingSmaller 1s 0s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate-reverse;
+-webkit-animation: fadeIn 0s cubic-bezier(0.175, 0.885, 0.32, 1.275) both,
+  loadingSmaller 1s 0s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate-reverse;
+-moz-animation: fadeIn 0s cubic-bezier(0.175, 0.885, 0.32, 1.275) both,
+  loadingSmaller 1s 0s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate-reverse;
+
 }
 @-webkit-keyframes loadingSmaller {
   from {
@@ -464,16 +470,27 @@ body {
     transform: scale(1);
   }
 }
-@keyframes loadingSmaller {
+
+@-moz-keyframes loadingSmaller {
   from {
-    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
     transform: scale(0.75);
   }
   to {
-    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
     transform: scale(1);
   }
 }
+
+@keyframes loadingSmaller {
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -482,6 +499,16 @@ body {
     opacity: 1;
   }
 }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -490,6 +517,7 @@ body {
     opacity: 1;
   }
 }
+
 
 /* Footer */
 

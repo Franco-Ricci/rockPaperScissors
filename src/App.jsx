@@ -1,6 +1,7 @@
 import "./index.css";
 // import svg from "./assets/react-svg"
 import Logo from "../public/images/logo.svg";
+import LogoBonus from "../public/images/logo-bonus.svg"
 import rock from "../public/images/icon-rock.svg";
 import paper from "../public/images/icon-paper.svg";
 import scissors from "../public/images/icon-scissors.svg";
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header Logo={Logo} score={score} />
+      <Header Logo={!mode ? LogoBonus : Logo } score={score} />
 
       {match && (
         <ShowResults
