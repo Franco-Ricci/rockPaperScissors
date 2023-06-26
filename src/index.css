@@ -75,7 +75,9 @@ body {
 /* Picks */
 
 .pick__container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pick__rock {
@@ -84,7 +86,7 @@ body {
   height: 134px;
   position: absolute;
   bottom: 0px;
-  left: 234px;
+  left: 193px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -99,7 +101,7 @@ body {
   height: 134px;
   position: absolute;
   top: -53px;
-  left: 114px;
+  left: 74px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -114,7 +116,7 @@ body {
   height: 134px;
   position: absolute;
   top: -53px;
-  right: 114px;
+  right: 74px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -124,10 +126,27 @@ body {
 }
 
 .pick__background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   margin-top: 120px;
+  background-image: url(../images/bg-triangle.svg);
+  background-position: center;
+  background-size: contain;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    max-width: 32rem
+}
+
+.pick__background--pentagon {
+  position: relative;
+  margin-top: 120px;
+  background-image: url(../images/bg-pentagon.svg);
+  background-position: center;
+  background-size: contain;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    max-width: 32rem
 }
 
 /* Choices modal */
@@ -308,7 +327,7 @@ body {
   height: 134px;
   position: absolute;
   bottom: -50px;
-  right: 123px;
+  right: 91px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -323,7 +342,7 @@ body {
   height: 134px;
   position: absolute;
   top: 45px;
-  right: 90px;
+  right: 60px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -337,8 +356,8 @@ body {
   align-items: center;
   height: 134px;
   position: absolute;
-  top: -53px;
-  right: 232px;
+  top: -46px;
+  right: 189px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -353,7 +372,7 @@ body {
   height: 134px;
   position: absolute;
   bottom: -50px;
-  left: 123px;
+  left: 91px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -368,7 +387,7 @@ body {
   height: 134px;
   position: absolute;
   top: 45px;
-  left: 90px;
+  left: 60px;
   background-color: white;
   padding: 26px;
   border-radius: 50%;
@@ -578,12 +597,12 @@ body {
     left: 15px;
   }
   .pick__rock {
-    left: 107px;
-    top: 141px;
+    left: 117px;
+    top: 166px;
   }
 
   .pick__BonusScissors {
-    right: 112px;
+    right: 114px;
     top: -65px;
   }
 

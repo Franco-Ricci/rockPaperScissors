@@ -1,13 +1,12 @@
-import Pentagon from "../../public/images/bg-pentagon.svg";
+
 
 // eslint-disable-next-line react/prop-types
 export function BonusMode({ rock, paper, scissors, lizard, spock, yourChoice }) {
     return(
 
   <div className="pick__container">
-    <div className="pick__background">
-      <img className="triangle" src={Pentagon} />
-    </div>
+    <div className="pick__background--pentagon">
+     
     <div className="pick__BonusRock" onClick={() => yourChoice("rock")}>
       <img src={rock} alt="rock" />
     </div>
@@ -22,6 +21,7 @@ export function BonusMode({ rock, paper, scissors, lizard, spock, yourChoice }) 
     </div>
     <div className="pick__BonusSpock" onClick={() => yourChoice("spock")}>
       <img src={spock} alt="spock" />
+    </div>
     </div>
   </div>
     )
