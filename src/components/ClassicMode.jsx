@@ -9,10 +9,10 @@ export function ClassicMode({rock,paper,scissors,yourChoice}) {
       <img src={rock} alt="rock" />
     </div>
     <div className="pick__paper" onClick={() => yourChoice("paper")}>
-      <img src={paper} alt="paper" value="paper" />
+      <img src={paper} alt="paper"/>
     </div>
     <div className="pick__scissors" onClick={() => yourChoice("scissors")}>
-      <img src={scissors} alt="scissors" value="scissors" />
+      <img src={scissors} alt="scissors" />
     </div>
     </div>
   </div>
